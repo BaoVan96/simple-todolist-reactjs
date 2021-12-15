@@ -1,6 +1,6 @@
 /* eslint-disable no-useless-constructor */
 import React from "react";
-import InputBox from "./InputBox";
+import InputWrapper from "./InputWrapper";
 
 class Header extends React.Component {
     constructor (props) {
@@ -8,11 +8,11 @@ class Header extends React.Component {
     }
 
     render() {
-        let title = this.props.title;
+        const {addNew, mode, query, searchToDo} = this.props;
         return (
             <header>
-                <h1>{title}</h1>
-                <InputBox addNew={this.props.addNew} />
+                <h1>Thing To Dos</h1>
+                <InputWrapper {...{addNew, mode, query, searchToDo}}/>
             </header>
         )
     }

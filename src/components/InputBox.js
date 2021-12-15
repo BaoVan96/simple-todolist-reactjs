@@ -26,12 +26,13 @@ class InputBox extends React.Component {
 
         if (e.keyCode == 13) {
             addNew(text);    
+            this.setState({value: ''});
         }
     }
 
     render() {
         return (
-            <input type="text"
+            <input type="text" autoFocus
                  className="form-control add-todo" 
                  placeholder="Add New" 
                  onChange={this.handleChange}
