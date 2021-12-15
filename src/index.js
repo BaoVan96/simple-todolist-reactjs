@@ -1,14 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './assets/styles/index.css';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 
 // Add bootstrap
 import 'bootstrap/dist/css/bootstrap.css';
-
-// Add index.css
-import './styles/index.css'
 
 
 ReactDOM.render(
